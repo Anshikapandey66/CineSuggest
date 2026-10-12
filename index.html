@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineSuggest | Movie Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo">🎬 CineSuggest</a>
+  <button id="surprise">✦ Surprise Me</button>
+</header>
+
+<section class="hero">
+  <p class="tag">YOUR PERSONAL MOVIE GUIDE</p>
+  <h1>Find Your Next<br><span>Favorite Movie.</span></h1>
+  <p>Discover amazing movies for your next movie night.</p>
+  <a href="#movies" class="explore">Explore Movies ↓</a>
+</section>
+
+<main id="movies">
+  <h2>Explore Collection</h2>
+  <input id="search" type="text" placeholder="🔍 Search movies...">
+
+  <div class="filters">
+    <button class="active" data-genre="All">All</button>
+    <button data-genre="Action">Action</button>
+    <button data-genre="Sci-Fi">Sci-Fi</button>
+    <button data-genre="Romance">Romance</button>
+    <button data-genre="Comedy">Comedy</button>
+    <button data-genre="Thriller">Thriller</button>
+    <button data-genre="Drama">Drama</button>
+  </div>
+
+  <div id="movieGrid" class="grid"></div>
+  <p id="empty" hidden>No movies found. Try another search!</p>
+
+  <section class="watchlist">
+    <h2>♡ My Watchlist <span id="count">0</span></h2>
+    <p class="sub">Your saved movies appear here.</p>
+    <div id="savedGrid" class="grid"></div>
+  </section>
+</main>
+
+<footer>Made with ♥ for movie lovers | CineSuggest</footer>
+<script src="script.js"></script>
+</body>
+</html>
